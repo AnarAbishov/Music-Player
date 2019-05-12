@@ -1,0 +1,218 @@
+
+// Carousel fade transition
+.carousel-fade {
+	.carousel-item {
+		display: block;
+		position: absolute;
+		opacity: 0;
+		transition: opacity 3s ease-in-out;
+
+		&.active {
+			opacity: 1;
+		}
+	}
+}
+
+
+ // Custom styles for this pen
+html, 
+body, 
+.carousel,
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  height: 400px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+//animasiya yazi uchun/////////////////////////////////
+#messenger {
+  margin-top: 3%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 20px;
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(#000, 0.9);
+}
+//animasiya yazi uchun//
+
+.owl-carousel{
+  margin-top: 5%;
+}
+#carousel-example-captions{
+  box-shadow: 0px 0px 40px 10px black;  
+}
+
+
+//footer///////////////////////////////////////////////
+.footer{
+  
+  .footer-widget-left{
+    ul{
+      list-style: none;
+      padding-left: 0px;
+      li{
+        display: inline-block;
+        font-size: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+  .footer-widget-right{
+    .textwidget{
+      .form-control{
+        margin-bottom: 3%;
+      }
+    }
+  }
+}
+
+
+//footer//////////////////////////////////////////////
+
+
+
+
+.ul_animation{
+  body,html{height:100%;margin:0;padding:0;background:#E3DFD2}
+svg{
+  background:url('https://images.unsplash.com/photo-1468392788711-903a924761a6?ixlib=rb-0.3.5&s=81c4b014afb95cbd3680e6daa2509c22&auto=format&fit=crop&w=1065&q=80');
+  background-size:cover;
+  width:30vmin; height:auto;
+  display:block;
+  margin:0vmin auto;
+}
+text{
+  font-size:10px;
+  transition:font-size .4s ease-out;
+  font-weight:700;
+  font-family:arial;
+}
+svg:hover text{
+  transition:font-size .4s ease-in;
+  font-size: 500px;
+}
+}
+
+
+// modal
+
+
+// * MODAL AS LEFT/RIGHT SIDEBAR
+// * Add "left" or "right" in modal parent div, after class="modal".
+// * Get free snippets on bootpen.com
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 250px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog{
+  left: 250px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+          transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog{
+  left: 0;
+}
+      
+/*Right*/
+.modal.right.fade .modal-dialog {
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+
+
+.demo {
+padding-top: 60px;
+padding-bottom: 110px;
+}
+.foot{
+  position: relative;
+  
+}
+.btn-demo {
+  position: absolute;
+  bottom: -40%;
+  right:0%;
+margin: 15px;
+padding: 10px 15px;
+border-radius: 0;
+font-size: 16px;
+background-color: transparent;
+}
+.shuffle {
+  position: absolute;
+  bottom: -40%;
+  right:15%;
+bottom: -33%;
+right: 26%;
+margin: 15px;
+
+}
+
+.btn-demo:focus {
+outline: 0;
+}
+
+.demo-footer {
+position: fixed;
+bottom: 0;
+padding: 5px;
+background-color: #212121;
+text-align: center;
+}
+
+.demo-footer > a {
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+color: #fff;
+}

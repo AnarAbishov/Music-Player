@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-2">
+            <nav id="sidebar" class="fixed-top">
+                <div class="sidebar-header">
+                    <h3>Music Player</h3>
+                    <strong>MP</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-ban"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="last-li">
+
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+
+                            <i class="fas fa-file-alt"></i>
+                            Pages
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="#">Page 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-powerpoint"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-fax"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-phone-volume"></i>
+                            Contact
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="foot">
+                        <!-- <div class="audio-player">
+                                <div class="audio-cards" id="player-container" href="javascript:;">
+                                    <audio id="player" ontimeupdate="initProgressBar()">
+                                        <source src="audio/horse.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="player-controls scrubber">
+    
+                                    <span id="seek-obj-container">
+                                        <progress id="seek-obj" value="0" max="1"></progress>
+                                    </span>
+                                    <small style="float: left; position: relative; left: 15px;" id="start-time"></small>
+                                    <small style="float: right; position: relative; right: 20px;" id="end-time"></small>
+                                </div>
+    
+    
+                            </div>
+                            <div id="next-btn">
+                                <i class="fa fa-step-backward" style="font-size:31px;color:#AEB7C2"></i>
+                            </div>
+                            <div id="play-btn">
+                            </div>
+                            <div id="prev-btn">
+                                <i class="fa fa-step-forward" style="font-size:31px;color:#AEB7C2"></i>
+                            </div>
+                            <div class="vol">
+                                <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+    
+                            </div>
+                            <div class="">
+                                <i class="fa fa-reply shuffle" style="font-size:31px;color:#AEB7C2"></i>
+                            </div>
+                             -->
+                        <audio id="audio" preload="none" tabindex="0">
+                            <source src="https://archive.org/download/calexico2006-12-02..flac16/calexico2006-12-02d1t02.mp3" data-track-number="1" />
+                            <source src="https://archive.org/download/ra2007-07-21/ra2007-07-21d1t05_64kb.mp3" data-track-number="2" />
+                            <source src="https://archive.org/download/slac2002-02-15/slac2002-02-15d1t07_64kb.mp3" data-track-number="3" />
+                            <source src="https://archive.org/download/blitzentrapper2009-02-24.flac16/blitzentrapper2009-02-24t02_64kb.mp3" data-track-number="4"
+                            />
+                            <source src="https://archive.org/download/samples2003-11-21.flac16/samples2003-11-21d2t04.mp3" data-track-number="5" />
+                            <source src="https://archive.org/download/mikedoughty2004-06-16.flac16/d1t13.mp3" data-track-number="6" />
+                            <source src="https://archive.org/download/glove2004-03-18.shnf/glove2004-03-18d1t05.mp3" data-track-number="7" />
+                            <source src="https://archive.org/download/guster2005-11-12.flac16/guster2005-11-12d2t04.mp3" data-track-number="8" />
+                            <source src="https://archive.org/download/oar2004-11-12.flac/oar2004-11-12d1t01.mp3" data-track-number="9" />
+                            <source src="https://archive.org/download/mmj2003-09-26.shnf/mmj2003-09-26d2t08.mp3" data-track-number="10" /> Your browser does not support HTML5 audio.
+                        </audio>
+                        <div class="player">
+
+
+                            <!-- /.play-box -->
+
+                            <div class="info-box">
+                                <div class="track-info-box">
+                                    <div class="track-title-text"></div>
+                                    <div class="audio-time">
+                                        <span class="current-time">00:00</span> /
+                                        <span class="duration">00:00</span>
+                                    </div>
+                                </div>
+                                <!-- /.info-box -->
+
+                                <div class="progress-box">
+                                    <div class="progress-cell">
+                                        <div class="progress">
+                                            <div class="progress-buffer"></div>
+                                            <div class="progress-indicator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.progress-box -->
+
+                            <div class="controls-box">
+                                <i class="previous-track-btn disabled">
+                                    <span class="screen-reader-text"></span>
+                                </i>
+                                <div class="large-toggle-btn">
+                                    <i class="large-play-btn">
+                                        <span class="screen-reader-text"></span>
+                                    </i>
+                                </div>
+                                <i class="next-track-btn">
+                                    <span class="screen-reader-text"></span>
+                                </i>
+                            </div>
+                            <!-- /.controls-box -->
+                        </div>
+                        <!-- /.player -->
+                        <div class="">
+                            <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal">
+                                <i class="fa fa-list" style="font-size:31px;color:#AEB7C2"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-10">
+        <div id="content">
+             
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="title">
+                                <h1>All Music</h1>
+                        </div>
+                </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="cards">
+                                    <div class="container">
+                                      <div class="top"></div>
+                                      <div class="bottom">
+                                        <h6>Music Name - sing </h6>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+            </div> 
+        </div> 
+            
+       </div>
+          
+       
+           
+        
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

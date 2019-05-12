@@ -1,0 +1,70 @@
+
+  
+  .cards{
+    width: 100%;
+    height: 200px;
+    background: white;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    &:hover{
+      transform: scale(1);
+      box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+    }
+    
+    .container{
+      width:100%;
+      height:100%;
+      .top{
+          border-radius: 15%;
+        height: 80%;
+        width:100%;
+        background: url(https://s-media-cache-ak0.pinimg.com/736x/49/80/6f/49806f3f1c7483093855ebca1b8ae2c4.jpg) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .bottom{
+          margin-top: 5%;
+        h6{
+            text-align: center;
+            color: black;
+        }
+      }
+    }
+  }
+
+
+
+  //// animation text///////////////////
+
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 25px;
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 70px;
+	line-height: .75;
+	margin-bottom: 3%;
+}
